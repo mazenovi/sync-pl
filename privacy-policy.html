@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — sync-pl</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; margin: 0; background: #0f0f0f; color: #f1f1f1; }
+  header { background: #181818; padding: 1.5rem 2rem; border-bottom: 1px solid #303030; }
+  h1 { font-size: 1.4rem; margin: 0; }
+  main { max-width: 760px; margin: 2.5rem auto; padding: 0 1.5rem; line-height: 1.7; }
+  .card { background: #181818; border: 1px solid #303030; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; }
+  a { color: #3ea6ff; }
+  h2 { font-size: 1.1rem; margin-top: 0; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Privacy Policy — sync-pl</h1>
+</header>
+<main>
+  <div class="card">
+    <p><em>Last updated: October 10, 2026</em></p>
+    <p>sync-pl is a personal, non-commercial command-line tool that mirrors
+    playlists owned by the user from Spotify into private playlists on the
+    user's own Deezer and YouTube accounts.</p>
+  </div>
+  <div class="card">
+    <h2>1. Data accessed</h2>
+    <ul>
+      <li><strong>Spotify</strong>: titles, artists and durations of tracks in the user's own playlists (via the Spotify Web API, with the user's own OAuth consent).</li>
+      <li><strong>YouTube</strong>: with the user's OAuth consent (scope <code>youtube</code>), the tool reads the user's own playlists and creates/updates <strong>private playlists on the user's own channel</strong>.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h2>2. Data storage</h2>
+    <p>All data (OAuth tokens, playlist track identifiers, matched video IDs)
+    is stored <strong>locally on the user's own computer</strong>
+    (<code>~/.config/sync-pl/</code>). Nothing is uploaded to any server
+    operated by the developer. The developer has no access to any user data.</p>
+  </div>
+  <div class="card">
+    <h2>3. Data sharing</h2>
+    <p>No data is sold, shared, transferred or disclosed to any third party.
+    The only external communications are the direct API calls to Spotify,
+    Deezer and Google on the user's own behalf, using the user's own
+    credentials.</p>
+  </div>
+  <div class="card">
+    <h2>4. Data retention &amp; deletion</h2>
+    <p>Local data can be deleted at any time by removing the
+    <code>~/.config/sync-pl/</code> directory. Revoking the application's
+    access in the Google account settings
+    (https://myaccount.google.com/permissions) immediately invalidates its
+    tokens.</p>
+  </div>
+  <div class="card">
+    <h2>5. Contact</h2>
+    <p>Developer: vmazenod@gmail.com</p>
+    <p><a href="index.html">← Back to sync-pl homepage</a></p>
+  </div>
+</main>
+</body>
+</html>
